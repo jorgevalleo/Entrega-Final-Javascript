@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Tareas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div id="salir"><button>Cerrar Sesión</button></div>
+    <div class="contenedor">
+        <h1>App de Tareas</h1>
+        <form id="formulario-tarea">
+            <input type="text" id="titulo-tarea" placeholder="Título de la tarea" required>
+            <textarea id="descripcion-tarea" placeholder="Descripción de la tarea" required></textarea>
+            <select id="estado-tarea">
+                <option value="pendiente">Pendiente</option>
+                <option value="en-proceso">En proceso</option>
+                <option value="finalizada">Finalizada</option>
+            </select>
+            <button type="submit">Agregar tarea</button>
+        </form>
+        <div id="user"></div>
+        <ul id="lista-tareas">
+            <!-- Aquí se mostrarán las tareas -->
+        </ul>
+    </div>
+    <script src="../js/codigo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
